@@ -1,8 +1,8 @@
-const a = 5;
-const b = 2;
-const myName = "Hank";
-
-console.log(a + 2);
-console.log(a * 2);
-console.log(a / 2);
-console.log("hello" + myName);
+const player = {
+  name: "DoootheG",
+  tier: "silver",
+  playtype: "aram",
+};
+console.log(player);
+player.tier = "platinum";
+console.log(player);
