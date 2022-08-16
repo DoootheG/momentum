@@ -23,3 +23,19 @@ const greeting = {
 };
 
 greeting.firstMeet("Lukas");
+
+const calculator = {
+  plus: function (a, b) {
+    console.log(a + b);
+  },
+  divide: function (a, b) {
+    console.log(a / b);
+  },
+  powerof: function (a, b) {
+    console.log(a ** b);
+  },
+};
+
+calculator.plus(100, 200);
+calculator.divide(10000, 5);
+calculator.powerof(2, 10);
