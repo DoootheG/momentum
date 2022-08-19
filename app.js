@@ -1,41 +1,17 @@
-const player = {
-  name: "DoootheG",
-  tier: "silver",
-  playtype: "aram",
-};
-console.log(player);
-player.tier = "platinum";
-console.log(player);
+const title = document.querySelector(".hello h1");
 
-function theg(a, b) {
-  console.log("내 책상에는 " + a + "개의 " + b + "이 있다.");
+function handleTitleClick() {
+  title.style.color = "tomato";
 }
 
-theg(1, "민트사탕");
-theg(4, "껌");
-theg(4, "책");
-theg(15, "볼펜");
+function handleMouseEnter() {
+  title.style.color = "red";
+}
 
-const greeting = {
-  firstMeet: function (a) {
-    console.log("Hello " + a + "! This is Hank. Nice to meet you!");
-  },
-};
+function handleMouseLeave() {
+  title.style.color = "blue";
+}
 
-greeting.firstMeet("Lukas");
-
-const calculator = {
-  plus: function (a, b) {
-    console.log(a + b);
-  },
-  divide: function (a, b) {
-    console.log(a / b);
-  },
-  powerof: function (a, b) {
-    console.log(a ** b);
-  },
-};
-
-calculator.plus(100, 200);
-calculator.divide(10000, 5);
-calculator.powerof(2, 10);
+title.addEventListener("click", handleTitleClick);
+title.addEventListener("mouseenter", handleMouseEnter);
+title.addEventListener("mouseleave", handleMouseLeave);
