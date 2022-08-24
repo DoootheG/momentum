@@ -5,6 +5,7 @@ const greeting = document.querySelector(".greeting");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
+
 function onLoginSumit(event) {
   event.preventDefault();
   const username = loginInput.value;
