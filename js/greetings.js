@@ -4,7 +4,7 @@ const loginButton = loginForm.querySelector("button");
 const greeting = document.querySelector(".greeting");
 
 const HIDDEN_CLASSNAME = "hidden";
-const USERNAME_KEY = "username";
+const USERNAME_KEY = "사용자명";
 
 function onLoginSumit(event) {
   event.preventDefault();
